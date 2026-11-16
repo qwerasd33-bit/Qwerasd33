@@ -35,6 +35,17 @@ jobs:
       - name: Sync Capacitor Android project
         run: npx cap sync android
 
+      - name: Repair empty icon files
+        run: |
+          cd android/app/src/main/res
+          echo '<?xml version="1.0" encoding="utf-8"?><resources><color name="ic_launcher_background">#FFFFFF</color></resources>' > values/ic_launcher_background.xml
+          for f in $(find . -type f -name '*.png' -size 0); do
+            case "$f" in
+              *foreground*) cp mipmap-hdpi/ic_launcher_foreground.png "$f" ;;
+              *) cp mipmap-xxxhdpi/ic_launcher.png "$f" ;;
+            esac
+          done
+
       - name: Build Debug APK
         run: |
           cd android
