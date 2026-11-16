@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">بورصة البر والفعاليات</string>
+    <string name="title_activity_main">بورصة البر والفعاليات</string>
+    <string name="package_name">com.burrexchange.app</string>
+    <string name="custom_url_scheme">com.burrexchange.app</string>
+</resources>

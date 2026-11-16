@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#171b24" />
+      <stop offset="100%" stop-color="#0d0f14" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3d285" />
+      <stop offset="55%" stop-color="#d4a853" />
+      <stop offset="100%" stop-color="#a87c2d" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed dark desert night base -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)" />
+  <rect x="14" y="14" width="484" height="484" rx="96" fill="none" stroke="#d4a853" stroke-opacity="0.28" stroke-width="4" />
+
+  <!-- Subtle compass/grid arcs -->
+  <circle cx="256" cy="244" r="168" fill="none" stroke="#d4a853" stroke-opacity="0.12" stroke-width="2" />
+  <circle cx="256" cy="244" r="118" fill="none" stroke="#d4a853" stroke-opacity="0.09" stroke-width="2" stroke-dasharray="8 8" />
+
+  <!-- Crescent moon (Hijri calendar symbol) -->
+  <path d="M358 106a46 46 0 1 0 42 64 36 36 0 1 1-42-64z" fill="url(#goldGrad)" opacity="0.92" />
+
+  <!-- Desert tent / dune silhouette -->
+  <path d="M96 360 L204 204 L260 278 L316 176 L416 360 Z" fill="#1e2430" stroke="url(#goldGrad)" stroke-width="8" stroke-linejoin="round" />
+  <path d="M204 204 L204 360" stroke="#d4a853" stroke-opacity="0.4" stroke-width="4" />
+
+  <!-- Rising market trend line -->
+  <path d="M92 326 L176 266 L248 294 L338 192 L414 148" fill="none" stroke="url(#emeraldGrad)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M376 140 L422 142 L416 188" fill="none" stroke="url(#emeraldGrad)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Data nodes -->
+  <circle cx="176" cy="266" r="11" fill="#0d0f14" stroke="#34d399" stroke-width="6" />
+  <circle cx="248" cy="294" r="11" fill="#0d0f14" stroke="#34d399" stroke-width="6" />
+  <circle cx="338" cy="192" r="11" fill="#0d0f14" stroke="#34d399" stroke-width="6" />
+
+  <!-- Gold horizon bar -->
+  <rect x="86" y="382" width="340" height="12" rx="6" fill="url(#goldGrad)" />
+  <rect x="136" y="408" width="240" height="6" rx="3" fill="#d4a853" opacity="0.45" />
+</svg>
